@@ -12,6 +12,7 @@ html {
 
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
 }
 
 main {
@@ -22,4 +23,50 @@ main {
 
 .cards {
   background: #eee;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+h2 {
+  font-size: 22px;
+  line-height: 22px;
+  word-wrap: break-word;
+  width: 470px;
+}
+.card{
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  overflow: auto;
+
+  max-width: 470px;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+.main-card{
+  display: flex;
+}
+.main-card__text{
+  font-size: 16px;
+  line-height: 22px;
+  word-wrap: break-word;
+  max-width: 320px;
+  overflow: auto;
+}
+
+.image{
+  width: 150px;
+}
+.main-card__image{
+  width: 150px;
+}
+.main-card__list{
+  list-style: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
